@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>Clima</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="backdrop-blur-sm h-screen w-screen">
+
+    <div class="container mx-auto px-4">
+      
+      <div class="max-w-lg mx-auto ">
+  
+        <div class="p-6 pt-10 flex justify-center">
+          <div id="resultado">
+            <p class="text-center text-white mt-6 text-2xl">Agrega tu ciudad y país para conocer el clima, el resultado se mostrará aquí.</p>
+          </div>
+        </div>
+        
+        <form id="formulario" class="mt-10 " action="#" method="POST">
+          <div class="mt-5">
+            <select 
+              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+              id="pais"
+            >
+              <option disabled selected value="">-- Selecciona el País --</option>
+              <option value="MX">México</option>
+              <option value="CA">Canada</option>
+              <option value="ES">España</option>
+              <option value="US">Estados Unidos</option>
+              <option value="GB">Reino Unido</option>
+              <option value="DE">Alemania</option>
+              <option value="IN">India</option>
+              <option value="MM">NOSE</option>
+              <option value="AR">Argentina</option>
+              <option value="CO">Colombia</option>
+              <option value="CR">Costa Rica</option>
+              <option value="PE">Perú</option>
+            </select>
+          </div>
+          <div class="mt-5">
+            <input 
+              type="text" 
+              name="ciudad"
+              id="ciudad"
+              placeholder="Escribe tu Ciudad"
+              class="w-full p-2 rounded"
+            />
+          </div>
+          <input 
+            type="submit"
+            class="mt-5 w-full bg-yellow-400 p-3 hover:bg-yellow-500 uppercase font-bold cursor-pointer rounded"
+            value="Obtener Clima"
+          />
+  
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
